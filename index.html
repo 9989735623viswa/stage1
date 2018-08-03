@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+
+   <video source src="viswa.mp4" width="320" height="200" autoplay controls id="video">
+
+</video>
+<br>
+<button type="button" name="button" onclick="play()">play</button>
+<button type="button" name="button" onclick="pause()">pause</button>
+<br>
+<br>
+<br>
+<audio src="inka inka .mp3" id="audio" autoplay controls>
+
+</audio>
+<br>
+<button type="button" name="button" onclick="play1()">play</button>
+<button type="button" name="button" onclick="pause1()">pause</button>
+
+    </body>
+
+    <script type="text/javascript">
+    function play()
+    {
+      var vid=document.getElementById("video");
+      vid.play();
+    }
+    function pause()
+    {
+      var vid=document.getElementById("video");
+      vid.pause();
+    }
+
+    // Audio
+    function play1()
+    {
+      var aud=document.getElementById("audio");
+      aud.play();
+    }
+    function pause1()
+    {
+      var aud=document.getElementById("audio");
+      aud.pause();
+    }
+    </script>
+  </html>
